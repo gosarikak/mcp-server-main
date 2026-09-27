@@ -1,0 +1,37 @@
+{
+  "name": "mcp-server-langfuse",
+  "version": "0.0.1",
+  "description": "A MCP Server for Langfuse Prompt Management",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "mcp-server-langfuse": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\""
+  },
+  "files": [
+    "build"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.5.0",
+    "langfuse": "^3.35.2",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "typescript": "^5.7.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "hu"
+  },
+  "keywords": [
+    "langfuse",
+    "model-context-protocol",
+    "prompt",
+    "management"
+  ],
+  "author": "marcklingen",
+  "license": "MIT"
+}
